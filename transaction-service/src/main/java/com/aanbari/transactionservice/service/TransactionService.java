@@ -25,4 +25,8 @@ public class TransactionService {
 
         return newTransaction;
     }
+
+    public List<Transaction> getTransactionFrom(int from) {
+        return transactionRepository.findByFrom(from);
+    }
 }

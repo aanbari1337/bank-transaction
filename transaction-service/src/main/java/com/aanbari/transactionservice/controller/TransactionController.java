@@ -24,6 +24,13 @@ public class TransactionController {
         return transactions;
     }
 
+    @GetMapping("/transaction-service/from/{from}")
+    public List<Transaction> getUserTransactions(@PathVariable int from){
+
+        List<Transaction> transactions = transactionService.getTransactionFrom(from);
+        return transactions;
+    }
+
     @PostMapping("/transaction-service")
     public ResponseEntity<Transaction> saveTransaction(@RequestBody Transaction transaction){
 

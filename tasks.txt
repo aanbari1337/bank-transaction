@@ -1,0 +1,8 @@
+launch zipkin server: docker run -p 9411:9411 openzipkin/zipkin:2.23
+connect all the microservice to zipkin
+
+
+build a maven project: mvn clean package -DskipTests
+docker-compose down
+docker rmi <images-name>
+docker-compose up

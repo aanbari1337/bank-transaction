@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.aanbari.restful-webservice</groupId>
-	<artifactId>restful-webservice</artifactId>
+	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>restful-webservice</name>
 	<description>Demo project for Spring Boot</description>
